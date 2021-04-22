@@ -23,6 +23,7 @@
 
     input + input {
       margin-left: 5px;
+      margin-right: 5px;
     }
 
     div {
@@ -34,7 +35,22 @@
   }
 }
 
+@media (min-width: 600px) {
+  .greetingBox .bodyForm {
+    width: 240px;
+  }
+}
+
 @media (max-width: 600px) {
+  input {
+    width: 70%
+  }
+}
+
+@media (max-width: 280px) {
+  .greetingBox {
+    width: 280px;
+  }
   input {
     width: 70%
   }
