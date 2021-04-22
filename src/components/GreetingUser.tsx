@@ -32,7 +32,7 @@ const GreetingUser = observer(() => {
         return (
             <div className="greetingBox">
                 {store.show ? <Modal
-                        showModalWindow={GreetingStore.showModalWindow}
+                        unShowModalWindow={GreetingStore.unShowModalWindow}
                         firstName={store.user.firstName}
                         secondName={store.user.lastName}/> :
                     <div className='bodyForm'>

@@ -19,10 +19,13 @@ class GreetingStore {
         (!this.store.user.firstName || !this.store.user.lastName)
             ? this.store.error = true :
             this.store.show = (!this.store.show)
-        // if (!this.store.show) {
-        //     this.store.user.firstName = ''
-        //     this.store.user.lastName = ''
-        // }
+    }
+    unShowModalWindow = () =>{
+        this.store.show = (!this.store.show)
+        if (!this.store.show) {
+            this.store.user.firstName = ''
+            this.store.user.lastName = ''
+        }
     }
     handlefirstNameInput = (e: React.ChangeEvent<HTMLInputElement>) => {
         this.store.error = false
